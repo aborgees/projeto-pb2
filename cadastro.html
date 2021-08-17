@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title> Baleiasbr</title>
+
+
+
+        <body>
+
+            <div>
+                <h1> Baleiasbr </h1>
+                <h4> Faça seu cadastro para acessar o site</h4>
+                <form method="POST" action="">
+                    <label for="email">Email: </label>
+                    <input type="email" name="" placeholder="ana@mail.com">
+                    <pre></pre>
+                    <label for="senha">Senha: </label>
+                    <input type="password" name="" id="password" placeholder="******">
+                    <pre></pre>
+                    <label for="senha">Senha: </label>
+                    <input type="password" placeholder="confirme a senha" id="confirm_password">
+                    <pre></pre>
+                    <input type="checkbox" name="termos" value="concordancia">Eu concordo com os <input type="button"
+                        value="termos" onclick="msg()"> deste site.
+                </form>
+
+                <div class="botao">
+                    <p><a href="./menu.html"><input type="submit" value="Entrar" /></a></p>
+                </div>
+
+                <div>
+                    <p><a href="./login.html">Já tem conta?</a></p>
+                </div>
+
+
+                
+
+            </div>
+            
+
+
+        </body>
+        
+    </head>
+
+    <script>
+
+        var password = document.getElementById("password")
+            , confirm_password = document.getElementById("confirm_password");
+    
+        function validatePassword() {
+            if (password.value != confirm_password.value) {
+                confirm_password.setCustomValidity("senhas diferentes!");
+            } else {
+                confirm_password.setCustomValidity('');
+            }
+         }
+
+    
+         password.onchange = validatePassword;
+         confirm_password.onkeyup = validatePassword;
+    
+        function msg() {
+            alert("Os conteúdos e informações deste site foram retirados da internet.");
+        }
+    </script>
+
+
+</html>
