@@ -1,0 +1,75 @@
+body {
+
+  background-color: #87CEFA;
+  text-align: center;
+  align-items: center;
+  margin: 5px;
+  padding: 12%;
+ 
+} 
+
+
+a {
+
+  text-decoration: none;
+  color:#000;
+
+}
+
+ .titulo{
+
+    text-align:center; 
+
+        
+   } 
+   .menulat{
+        
+    text-align:center;
+    position: relative;
+    padding: 4%;
+   }
+   .user{
+
+    display: block;
+    margin-left: 25px;
+    margin-right: auto;
+    width: 50%;
+    }
+
+    .menu input{
+      width: 100%;
+      margin-bottom: 19px;
+     }
+                
+    .botao input {
+     width: 15%;
+      margin-bottom: 19px; 
+     }
+     .botao input[type="submit"] {
+     border: none;
+     outline: none;
+     height: 30px;
+     color: #000;
+      background:#fff;
+     border-radius: 20px;
+     transition: 0.2s;
+      }
+                
+      .botao input[type="submit"]:hover {
+       cursor: pointer;
+        background-color: #fff;
+        transition: 0.2s;
+      }
+                
+     .botao a {
+     font-weight: bold;
+      text-decoration: none;
+      font-size: 12px;
+      line-height: 20px;
+     color: #fff;
+      transition: 0.2s;
+     }
+     
+      
+    
+  
